@@ -1,0 +1,25 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="PruebadeAvalanoia.MainWindow"
+        Title="PruebadeAvalanoia">
+        <StackPanel x:Name="MiContenedor" Margin="25" Spacing="15">
+    <TextBlock Text="Mi primera aplicacion grafica" FontSize="24"/>
+    <TextBlock Text="Primer nombre:"/>
+    <TextBox x:Name ="nom1" Watermark="Ej: Juan"/>
+    <TextBlock Text="Segundo nombre:"/>
+    <TextBox x:Name ="nom2" Watermark="Opcional"/>
+    <TextBlock Text="Primer apellido:"/>
+    <TextBox x:Name ="nom3" Watermark="Ej: Perez"/>
+    <TextBlock Text="Segundo apellido:"/>
+    <TextBox x:Name ="nom4" Watermark="Opcional"/>
+    <TextBlock Text="Edad"/>
+    <TextBox x:Name ="edad" Watermark="Ej: 21"/>
+    <Button Content="Presentarme" Click="Presentarme"/>
+    <Button Content="Limpiar" Click="Limpiar"/>
+    <Button Content="Mensaje" Click="Mensaje"/>
+    <TextBlock x:Name="TxtMensajeError" Foreground="Red" TextWrapping="Wrap"/>
+</StackPanel>
+</Window>
